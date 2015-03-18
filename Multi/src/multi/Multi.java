@@ -18,6 +18,7 @@ public class Multi {
         MultiUI mui = new MultiUI();
         mui.setVisible(true);
         
+        //gör de nya trådarna 
         Printer p1 = new Printer("Tråd nummer 1 ", mui);
         Thread t1 = new Thread(p1);
         Printer p2 = new Printer("Tråd nummer 2 ", mui);
@@ -27,6 +28,7 @@ public class Multi {
         
         System.out.println("Startar 3 trådar...");
         
+        //startar trådarna här
         t1.start();
         t2.start();
         t3.start(); 
