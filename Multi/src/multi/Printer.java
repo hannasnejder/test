@@ -17,6 +17,7 @@ public class Printer implements Runnable{
     private static Random generator = new Random();
     private MultiUI mui;
   
+	//tesscomment
     
     public Printer(String name, MultiUI mui){
         threadName = name;
@@ -30,7 +31,7 @@ public class Printer implements Runnable{
     public void run(){
       
         try{
-            
+      
             mui.addText(threadName + " kommer att köra i " + sleepTime + " millisekunder. \n");
             int i = 1;
             while(i<=20){
